@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-22.04
     timeout-minutes: 15
 
-steps:
-  -name: Setup Node.js environment
-  uses: actions/setup-node@v4
-  with:
-    node-version: 18.x
+  steps:
+    -name: Setup Node.js environment
+    uses: actions/setup-node@v4
+    with:
+      node-version: 18.x
   
-  -name: Install dependencies
-  run: |
-    cd src
-    npm ci
-  -name: Run code validation (Linter)
-  run:
-    make lint
+    -name: Install dependencies
+    run: |
+      cd src
+      npm ci
+    -name: Run code validation (Linter)
+    run:
+      make lint
