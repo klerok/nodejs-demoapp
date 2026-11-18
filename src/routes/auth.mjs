@@ -15,7 +15,7 @@ import { getUserDetails, getUserPhoto } from '../graph.mjs'
 import { config as dotenvConfig } from 'dotenv'
 dotenvConfig()
 
-const AUTH_SCOPES = ['user.read']
+const AUTH_SCOPES = ['user.read'],
 const AUTH_ENDPOINT = 'https://login.microsoftonline.com/common'
 const AUTH_CALLBACK_PATH = 'signin'
 
